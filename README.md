@@ -12,7 +12,7 @@ $ composer require edfa3ly-backend/rabbitmq-bundle-consumer-generator
 ```
 
 ## Description 
-* This bundle generates consumers dynamically by code , converts them to their yaml representation and writes them over a path **from your own choice** under the main path : `config/packages/old_sound_rabbit_mq` , 
+* An extension bundle for `php-amqplib/rabbitmq-bundle` that generates consumers dynamically over code , converts them to their yaml representation and writes them over a path **from your own choice** under the main path : `config/packages/old_sound_rabbit_mq` , 
 if you don't have the main path you must create it .
 ## Usage
 * Implement the `Generator` **Interface** which returns an array of `ConsumerSkeleton` representing the body of the consumers you want to generate . 
