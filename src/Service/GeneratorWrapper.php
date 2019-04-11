@@ -1,6 +1,6 @@
 <?php
 
-namespace ConsumerGenerator;
+namespace ConsumerGenerator\Service;
 
 use ConsumerGenerator\FileSystem\ConsumerIO;
 use ConsumerGenerator\Generator\Generator;
