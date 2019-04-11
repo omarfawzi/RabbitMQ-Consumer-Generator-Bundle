@@ -1,7 +1,8 @@
 # RabbitMQ Consumer Generator Bundle
 
 [![Software License][ico-license]](LICENSE.md)
-
+[![Latest Stable Version](https://poser.pugx.org/edfa3ly-backend/rabbitmq-bundle-consumer-generator/v/stable)](https://packagist.org/packages/edfa3ly-backend/rabbitmq-bundle-consumer-generator)
+[![Total Downloads](https://poser.pugx.org/edfa3ly-backend/rabbitmq-bundle-consumer-generator/downloads)](https://packagist.org/packages/edfa3ly-backend/rabbitmq-bundle-consumer-generator)
 ## Install
 
 Via Composer
