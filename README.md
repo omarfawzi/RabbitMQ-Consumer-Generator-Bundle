@@ -42,7 +42,7 @@ class ServiceExample
    {
        $consumer = new ConsumerSkeleton() ;
        $consumer->setName('the name of your consumer');
-       $consumer->setRoutingKeys(['array of routing keys of your consumer']);
+       $consumer->setQueueRoutingKeys(['array of routing keys of your consumer']);
        $consumer->setExchangeType('fanout , direct , topic or headers');
        $consumer->setExchangeName('the name of your consumer's exchange');
        $consumer->setQueueName('Queue name');
