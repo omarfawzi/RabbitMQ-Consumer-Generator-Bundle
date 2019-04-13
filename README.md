@@ -40,7 +40,7 @@ class ServiceExample
     */
    public function createConsumers()
    {
-       $consumer = new ConsumerSkeleton[] ;
+       $consumer = new ConsumerSkeleton() ;
        $consumer->setName('the name of your consumer');
        $consumer->setRoutingKeys(['array of routing keys of your consumer']);
        $consumer->setExchangeType('fanout , direct , topic or headers');
