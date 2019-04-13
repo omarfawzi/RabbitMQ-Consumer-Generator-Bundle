@@ -53,7 +53,7 @@ final class GeneratorCommand extends Command
             $consumer->setCallback($this->requiredQuestion($input, $output, new Question('Please Enter The Path Of the Callback Class : ')));
             $consumer->setAmqpConsumerType($this->requiredQuestion($input, $output, new ChoiceQuestion('Choose the type of consumer : ', ['consumers', 'batch_consumers'])));
             $consumers[] = $consumer;
-            $generateAnotherConsumer = $this->requiredQuestion($input, $output, new ChoiceQuestion('Generate Another Consumer ?', ['true', 'false']));
+            $generateAnotherConsumer = $this->requiredQuestion($input, $output, new ChoiceQuestion('Generate Another Consumer ?', [true, false]));
         }
 
         $this->wrapper->writeConsumers($consumers, $consumersPath);
