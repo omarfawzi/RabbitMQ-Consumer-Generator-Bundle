@@ -53,6 +53,9 @@ class ServiceExample
    }
 }
 ``` 
+
+## Console
+Now you can generate consumers through command just run `php bin\console consumers:generate`
 ## Security
 
 If you discover any security related issues, please email omarfawzi96@gmail.com instead of using the issue tracker.
