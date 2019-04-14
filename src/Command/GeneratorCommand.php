@@ -25,7 +25,7 @@ final class GeneratorCommand extends Command
 
     public function __construct(GeneratorWrapper $wrapper)
     {
-        parent::__construct("");
+        parent::__construct(self::$defaultName);
         $this->wrapper = $wrapper;
     }
 
