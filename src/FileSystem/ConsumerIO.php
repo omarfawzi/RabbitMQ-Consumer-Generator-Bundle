@@ -22,8 +22,6 @@ use Symfony\Component\Yaml\Yaml;
  */
 class ConsumerIO
 {
-    private const OLD_SOUND_RABBIT_MQ_PATH = 'config/packages/old_sound_rabbit_mq';
-
     private const FILE_EXTENSION = 'yml';
 
     /** @var string $rootDirectory */
@@ -111,7 +109,7 @@ class ConsumerIO
      */
     private function getFullPath(string $path): string
     {
-        return $this->rootDirectory.'/'.self::OLD_SOUND_RABBIT_MQ_PATH.'/'.$path.'.'.self::FILE_EXTENSION;
+        return $this->rootDirectory.'/'.$path.'.'.self::FILE_EXTENSION;
     }
 
     /**

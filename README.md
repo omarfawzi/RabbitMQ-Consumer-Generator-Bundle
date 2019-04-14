@@ -12,8 +12,7 @@ $ composer require edfa3ly-backend/rabbitmq-bundle-consumer-generator
 ```
 
 ## Description 
-* An extension bundle for `php-amqplib/rabbitmq-bundle` that generates consumers dynamically over code , converts them to their yaml representation and writes them over a path **from your own choice** under the main path : `config/packages/old_sound_rabbit_mq` , 
-if you don't have the main path you must create it .
+* An extension bundle for `php-amqplib/rabbitmq-bundle` that generates consumers dynamically over code , converts them to their yaml representation and writes them over your specified path.
 ## Usage
 
 * Inject the `GeneratorWrapper` in a service of your own creation and use its methods 
@@ -49,7 +48,7 @@ class ServiceExample
        $consumer->setCallback('\path\to\your\consumer\callback::class');
        $consumer->setAmqpConsumerType('consumers or batch_consumers');
        
-       $this->wrapper->writeConsumers( [$consumer], 'path\to\your\consumers\yaml'); // the path is concatenated to the main path : config/packages/old_sound_rabbit_mq
+       $this->wrapper->writeConsumers( [$consumer], 'relative\path\to\your\consumers\yaml'); // the path is concatenated to the main path : config/packages/old_sound_rabbit_mq
    }
 }
 ``` 
