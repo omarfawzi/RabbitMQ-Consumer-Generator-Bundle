@@ -48,7 +48,7 @@ class ServiceExample
        $consumer->setCallback('\path\to\your\consumer\callback::class');
        $consumer->setAmqpConsumerType('consumers or batch_consumers');
        
-       $this->wrapper->writeConsumers( [$consumer], 'relative\path\to\your\consumers\yaml'); // the path is concatenated to the main path : config/packages/old_sound_rabbit_mq
+       $this->wrapper->writeConsumers( [$consumer], 'relative\path\to\your\consumers\yaml');
    }
 }
 ``` 
